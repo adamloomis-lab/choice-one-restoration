@@ -141,12 +141,12 @@ export default function Footer() {
               <span className="text-white">
                 Website by{" "}
                 <a
-                  href="https://adamloomis.online"
+                  href="https://adamloomismarketing.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-semibold hover:text-[var(--color-brand)] transition-colors"
                 >
-                  adamloomis.online
+                  Adam Loomis Marketing
                 </a>
               </span>
             </div>
