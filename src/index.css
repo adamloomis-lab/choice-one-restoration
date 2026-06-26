@@ -1,0 +1,178 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Montserrat', 'Inter', ui-sans-serif, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Choice One Restoration — white theme, royal blue + black (from logo) */
+  --color-brand: #1B27CD;        /* Logo royal blue — CTAs, accents, rules */
+  --color-brand-dark: #1620a6;
+  --color-brand-darker: #111880;
+
+  /* Deep ink-navy — used for footer + dark hero overlays (the "black" accent) */
+  --color-navy: #0b1020;
+  --color-navy-dark: #060912;
+
+  --color-ink: #0a0a0a;          /* near-black headlines on light surfaces */
+  --color-ink-soft: #1b1b1b;
+
+  --color-silver: #767676;       /* secondary gray — borders, muted text (WCAG AA min 4.54:1) */
+  --color-background: #ffffff;
+  --color-foreground: #000000;
+  --color-muted: #f5f5f5;        /* surface-variant card / band fill */
+  --color-muted-foreground: #4a4a4a;
+  --color-faint: #fafafa;        /* subtle section fill */
+  --color-border: #e0e0e0;       /* hairline border (outline-variant) */
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+  a, button:not(:disabled), [role="button"] {
+    cursor: pointer;
+  }
+}
+
+@layer components {
+  .container-x {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+    max-width: 1240px;
+  }
+  @media (min-width: 640px) {
+    .container-x { padding-inline: 1.5rem; }
+  }
+  @media (min-width: 1024px) {
+    .container-x { padding-inline: 2rem; }
+  }
+
+  /* Mono uppercase eyebrow label (spec-sheet feel) */
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-brand);
+  }
+
+  .rule-red {
+    width: 56px;
+    height: 4px;
+    background-color: var(--color-brand);
+  }
+
+  /* Heavy uppercase display headings */
+  .display {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    line-height: 0.98;
+  }
+
+  /* Primary red button */
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--color-brand);
+    color: #fff;
+    font-family: var(--font-display);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    font-size: 0.875rem;
+    padding: 0.9rem 1.6rem;
+    border: 2px solid var(--color-brand);
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+  }
+  .btn-primary:hover { background-color: var(--color-brand-dark); border-color: var(--color-brand-dark); }
+
+  /* Outline / secondary button */
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: transparent;
+    color: var(--color-ink);
+    font-family: var(--font-display);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    font-size: 0.875rem;
+    padding: 0.9rem 1.6rem;
+    border: 2px solid var(--color-ink);
+    transition: background-color 0.15s ease, color 0.15s ease;
+  }
+  .btn-outline:hover { background-color: var(--color-ink); color: #fff; }
+  .btn-outline-light {
+    color: #fff;
+    border-color: rgba(255,255,255,0.6);
+  }
+  .btn-outline-light:hover { background-color: #fff; color: var(--color-ink); }
+}
+
+@layer components {
+  .legal-prose h2 {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.25rem;
+    letter-spacing: -0.01em;
+    color: var(--color-ink);
+    margin-top: 2.25rem;
+    margin-bottom: 0.75rem;
+  }
+  .legal-prose h2:first-child { margin-top: 0; }
+  .legal-prose p,
+  .legal-prose li {
+    color: var(--color-muted-foreground);
+    line-height: 1.7;
+  }
+  .legal-prose p { margin-bottom: 1rem; }
+  .legal-prose ul {
+    list-style: disc;
+    padding-left: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  .legal-prose li { margin-bottom: 0.4rem; }
+  .legal-prose a { color: var(--color-brand); text-decoration: underline; }
+  .legal-prose strong { color: var(--color-ink); }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 9px; }
+::-webkit-scrollbar-track { background: #ececec; }
+::-webkit-scrollbar-thumb { background: var(--color-brand); }
+::-webkit-scrollbar-thumb:hover { background: var(--color-brand-dark); }
+
+/* WCAG 2.4.7 keyboard focus */
+*:focus-visible {
+  outline: 3px solid var(--color-brand);
+  outline-offset: 3px;
+}
+
+/* WCAG 2.3.3 reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
