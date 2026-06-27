@@ -14,7 +14,7 @@ export const BUSINESS = {
   founded: 2010,
   yearsExperience: "15+",
   blurb:
-    "Choice One Restoration is your local, family-owned team for roofing, siding, gutters, and windows across Northeast Ohio. With expert Amish installers and 15 years of craftsmanship, we treat every home like our own — and we'll handle your insurance claim from start to finish.",
+    "Choice One Restoration is your local, family-owned team for roofing, siding, gutters, and windows across Northeast Ohio. With expert Amish installers and 15 years of craftsmanship, we treat every home like our own, and we'll handle your insurance claim from start to finish.",
   phone: "(330) 688-7663",
   phoneSpoken: "(330) 688-ROOF",
   phoneE164: "+13306887663", // for tel:/sms: links

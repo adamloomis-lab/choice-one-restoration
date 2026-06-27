@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-[var(--color-navy)] text-white">
+      <section id="hero" className="relative overflow-hidden bg-[var(--color-navy)] text-white">
         <img
           src={IMAGES.heroHome}
           alt=""

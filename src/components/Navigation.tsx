@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, Phone } from "lucide-react";
 import Logo from "./Logo";
+import MobileMenu from "./MobileMenu";
 import { NAV_LINKS, BUSINESS } from "@/lib/constants";
 
 export default function Navigation() {
@@ -56,33 +57,15 @@ export default function Navigation() {
 
         <button
           className="lg:hidden p-2 text-[var(--color-ink)]"
-          onClick={() => setOpen((v) => !v)}
-          aria-label="Toggle menu"
+          onClick={() => setOpen(true)}
+          aria-label="Open menu"
+          aria-expanded={open}
         >
-          {open ? <X size={26} /> : <Menu size={26} />}
+          <Menu size={26} />
         </button>
       </div>
 
-      {open && (
-        <div className="lg:hidden border-t border-[var(--color-border)] bg-white">
-          <nav className="container-x flex flex-col py-4">
-            {NAV_LINKS.map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className={`py-3 font-display text-sm font-bold uppercase tracking-wide ${
-                  isActive(l.href) ? "text-[var(--color-brand)]" : "text-[var(--color-ink)]"
-                }`}
-              >
-                {l.label}
-              </Link>
-            ))}
-            <a href={`tel:${BUSINESS.phoneE164}`} className="btn-primary mt-3 justify-center">
-              <Phone size={16} /> {BUSINESS.phone}
-            </a>
-          </nav>
-        </div>
-      )}
+      <MobileMenu open={open} onClose={() => setOpen(false)} />
     </header>
   );
 }
