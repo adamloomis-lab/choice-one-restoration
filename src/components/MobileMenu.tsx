@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { Link } from "wouter";
 import { X, Phone, MapPin, Clock, ArrowRight, Facebook, Instagram } from "lucide-react";
 import Logo from "./Logo";
@@ -23,9 +24,13 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
         if (e.key === "Escape") onClose();
       };
       window.addEventListener("keydown", onKey);
-      const id = requestAnimationFrame(() => setShown(true));
+      let inner = 0;
+      const id = requestAnimationFrame(() => {
+        inner = requestAnimationFrame(() => setShown(true));
+      });
       return () => {
         cancelAnimationFrame(id);
+        cancelAnimationFrame(inner);
         window.removeEventListener("keydown", onKey);
         document.body.style.overflow = "";
       };
@@ -34,9 +39,9 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
     document.body.style.overflow = "";
   }, [open, onClose]);
 
-  if (!open) return null;
+  if (!open || typeof document === "undefined") return null;
 
-  return (
+  return createPortal(
     <div className="lg:hidden fixed inset-0 z-[60]" role="dialog" aria-modal="true" aria-label="Menu">
       {/* Backdrop */}
       <button
@@ -84,8 +89,8 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
                 key={l.href}
                 href={l.href}
                 onClick={onClose}
-                className={`group flex items-center justify-between border-b border-white/10 py-4 font-display text-2xl font-extrabold uppercase tracking-tight text-white/90 transition-all duration-500 hover:text-[var(--color-brand)] ${
-                  shown ? "translate-x-0 opacity-100" : "translate-x-6 opacity-0"
+                className={`group flex items-center justify-between border-b border-white/10 py-4 font-display text-2xl font-extrabold uppercase tracking-tight text-white/90 transition-transform duration-500 motion-reduce:transition-none hover:text-[var(--color-brand)] ${
+                  shown ? "translate-x-0" : "translate-x-6"
                 }`}
                 style={{ transitionDelay: `${120 + i * 70}ms` }}
               >
@@ -138,6 +143,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
           </div>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }
