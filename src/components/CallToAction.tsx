@@ -11,7 +11,7 @@ type CTAProps = {
 export default function CallToAction({
   title,
   highlight,
-  subtitle = "Let's set up a free, no-pressure visit. We'll take a look, answer your questions, and give you an honest estimate — no hard sell, ever.",
+  subtitle = "Let's set up a free, no-pressure visit. We'll take a look, answer your questions, and give you an honest estimate. No hard sell, ever.",
 }: CTAProps) {
   return (
     <section className="bg-[var(--color-brand)] text-white">

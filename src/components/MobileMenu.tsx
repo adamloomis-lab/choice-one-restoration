@@ -128,7 +128,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
               {a.street}, {a.city}, {a.state} {a.zip}
             </a>
             <p className="flex items-center gap-3">
-              <Clock size={18} className="shrink-0 text-[var(--color-brand)]" /> Mon–Fri 8AM–5PM · Sat by appointment
+              <Clock size={18} className="shrink-0 text-[var(--color-brand)]" /> Mon-Fri 8AM-5PM · Sat by appointment
             </p>
             <div className="flex items-center gap-4 pt-1">
               <a href={BUSINESS.social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Choice One on Facebook" className="flex items-center gap-2 hover:text-white">

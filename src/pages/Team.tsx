@@ -11,7 +11,7 @@ export default function Team() {
         eyebrow="Who We Are"
         title="Meet the People Behind"
         highlight="Choice One."
-        subtitle="We're a local, family-owned company. When you call Choice One, you're working directly with the owners — not a call center."
+        subtitle="We're a local, family-owned company. When you call Choice One, you're working directly with the owners, not a call center."
       />
 
       <section className="bg-white">
@@ -53,7 +53,7 @@ export default function Team() {
             <div className="border-l-4 border-[var(--color-brand)] pl-6">
               <p className="text-lg text-[var(--color-ink)] leading-relaxed">
                 Behind Bill and Gene is a dedicated team of project specialists and skilled Amish
-                installation crews who treat every home like their own — careful, clean, and
+                installation crews who treat every home like their own: careful, clean, and
                 committed to getting it right the first time.
               </p>
             </div>

@@ -49,7 +49,7 @@ export default function Home() {
           <div className="mt-7 inline-flex items-center gap-2 bg-[var(--color-brand)] px-4 py-2">
             <BadgeCheck size={16} />
             <span className="font-display text-sm font-extrabold uppercase tracking-wide">
-              Free Inspections — Call Today!
+              Free Inspections. Call Today!
             </span>
           </div>
 
@@ -92,7 +92,7 @@ export default function Home() {
                 Quality Work.<br />Honest People.
               </h2>
               <p className="mt-6 text-[var(--color-muted-foreground)] text-lg leading-relaxed max-w-lg">
-                We're a local, family-owned company — which means no cut corners, no surprise
+                We're a local, family-owned company, which means no cut corners, no surprise
                 charges, and no high-pressure sales. Just skilled Amish craftsmen doing solid
                 work you can count on for years to come.
               </p>
@@ -119,7 +119,7 @@ export default function Home() {
               </h3>
               <p className="mt-3 text-[var(--color-muted-foreground)] leading-relaxed">
                 Our skilled Amish crews bring a level of care and attention to detail that's
-                getting harder to find — installed right, the first time.
+                getting harder to find. Installed right, the first time.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.1} className="bg-[var(--color-brand)] text-white p-8 lg:p-10">
@@ -129,7 +129,7 @@ export default function Home() {
               </h3>
               <p className="mt-3 text-white/85 leading-relaxed">
                 Every project is backed by our written workmanship warranty. If something
-                isn't right, we'll make it right — simple as that.
+                isn't right, we'll make it right. Simple as that.
               </p>
             </AnimatedSection>
           </div>
@@ -185,7 +185,7 @@ export default function Home() {
             </h2>
             <p className="mt-4 text-white/75 text-lg leading-relaxed">
               When other companies say your claim won't get approved, we're not afraid to fight
-              for it. We document the full scope of damage and work directly with your insurer —
+              for it. We document the full scope of damage and work directly with your insurer,
               start to finish.
             </p>
           </div>

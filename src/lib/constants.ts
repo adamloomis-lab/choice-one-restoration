@@ -34,11 +34,11 @@ export const BUSINESS = {
   rating: { value: 4.9, count: 0 }, // TODO confirm exact review count with owner
   // TODO: confirm business hours with owner (placeholder below).
   hours: [
-    { day: "Monday", value: "8:00 AM – 5:00 PM" },
-    { day: "Tuesday", value: "8:00 AM – 5:00 PM" },
-    { day: "Wednesday", value: "8:00 AM – 5:00 PM" },
-    { day: "Thursday", value: "8:00 AM – 5:00 PM" },
-    { day: "Friday", value: "8:00 AM – 5:00 PM" },
+    { day: "Monday", value: "8:00 AM - 5:00 PM" },
+    { day: "Tuesday", value: "8:00 AM - 5:00 PM" },
+    { day: "Wednesday", value: "8:00 AM - 5:00 PM" },
+    { day: "Thursday", value: "8:00 AM - 5:00 PM" },
+    { day: "Friday", value: "8:00 AM - 5:00 PM" },
     { day: "Saturday", value: "By Appointment" },
     { day: "Sunday", value: "Closed" },
   ],
@@ -81,7 +81,7 @@ export const IMAGES = {
 export const PROCESS = [
   {
     title: "Free Inspection",
-    body: "We climb up, take a close look, photograph everything, and give you an honest assessment — no cost, no pressure.",
+    body: "We climb up, take a close look, photograph everything, and give you an honest assessment. No cost, no pressure.",
   },
   {
     title: "We Handle the Insurance",
@@ -118,7 +118,7 @@ export const SERVICES: Service[] = [
       "Roof replacement, repair, and storm restoration built to handle whatever Ohio weather throws at it.",
     image: IMAGES.roofing,
     intro:
-      "Your roof is the first line of defense for everything beneath it. From full replacements to targeted repairs and storm restoration, our expert Amish crews install roofs built to last — and we'll work with your insurance every step of the way.",
+      "Your roof is the first line of defense for everything beneath it. From full replacements to targeted repairs and storm restoration, our expert Amish crews install roofs built to last, and we'll work with your insurance every step of the way.",
     bullets: [
       "Full roof replacement & tear-off",
       "Repairs, maintenance & roof coatings",
@@ -126,7 +126,7 @@ export const SERVICES: Service[] = [
       "Skylight installation & soffit/fascia",
     ],
     body: [
-      "A roof is a system, not just shingles. We start with a thorough inspection, then build back with quality underlayment, proper ventilation, flashing, and shingles installed to manufacturer spec — so you get the full warranty and a roof that holds up for decades.",
+      "A roof is a system, not just shingles. We start with a thorough inspection, then build back with quality underlayment, proper ventilation, flashing, and shingles installed to manufacturer spec, so you get the full warranty and a roof that holds up for decades.",
       "Whether it's a few missing shingles, a leak, or full storm damage, we'll give you an honest recommendation and stand behind the work with our written workmanship guarantee.",
     ],
   },
@@ -138,7 +138,7 @@ export const SERVICES: Service[] = [
       "Vinyl and insulated siding that seals your home against the weather and transforms its curb appeal.",
     image: IMAGES.siding,
     intro:
-      "New siding is the fastest way to transform a home's appearance while sealing it against moisture and energy loss. We install vinyl, insulated, and fiber-cement systems with proper house wrap and flashing — done by craftsmen who care about the details.",
+      "New siding is the fastest way to transform a home's appearance while sealing it against moisture and energy loss. We install vinyl, insulated, and fiber-cement systems with proper house wrap and flashing, done by craftsmen who care about the details.",
     bullets: [
       "Vinyl & insulated vinyl siding",
       "Fiber-cement siding systems",
@@ -146,7 +146,7 @@ export const SERVICES: Service[] = [
       "Trim, soffit & fascia",
     ],
     body: [
-      "Siding does more than look good — it's your home's weather barrier. We install the underlying moisture management correctly so your walls stay dry, then finish with siding and trim that elevate the whole exterior.",
+      "Siding does more than look good. It's your home's weather barrier. We install the underlying moisture management correctly so your walls stay dry, then finish with siding and trim that elevate the whole exterior.",
       "Damaged from a storm or fallen tree? We handle the insurance side too, so getting your home back to beautiful is one less thing to worry about.",
     ],
   },
@@ -166,8 +166,8 @@ export const SERVICES: Service[] = [
       "Repair, re-pitching & cleaning",
     ],
     body: [
-      "We size and pitch every run so water flows where it should, then add guards to keep leaves and debris out — so your gutters keep working without constant cleaning.",
-      "Properly working gutters are one of the most important — and most overlooked — ways to protect your home from water damage.",
+      "We size and pitch every run so water flows where it should, then add guards to keep leaves and debris out, so your gutters keep working without constant cleaning.",
+      "Properly working gutters are one of the most important, and most overlooked, ways to protect your home from water damage.",
     ],
   },
   {
@@ -178,7 +178,7 @@ export const SERVICES: Service[] = [
       "Energy-efficient replacement windows that cut drafts, lower bills, and modernize your home.",
     image: IMAGES.windows,
     intro:
-      "Old windows leak air and money. We install energy-efficient replacement windows — properly measured, flashed, and sealed — to improve comfort, reduce noise, and lower your heating and cooling costs.",
+      "Old windows leak air and money. We install energy-efficient replacement windows, properly measured, flashed, and sealed, to improve comfort, reduce noise, and lower your heating and cooling costs.",
     bullets: [
       "Double- & triple-pane energy-efficient units",
       "Vinyl & composite frames",
@@ -187,7 +187,7 @@ export const SERVICES: Service[] = [
     ],
     body: [
       "A window is only as good as its installation. We measure each opening, set the unit level and square, and air-seal and flash it so you get the full efficiency the glass is rated for.",
-      "New windows are one of the highest-return upgrades you can make — better comfort, lower bills, and a fresh new look inside and out.",
+      "New windows are one of the highest-return upgrades you can make: better comfort, lower bills, and a fresh new look inside and out.",
     ],
   },
   {
@@ -198,7 +198,7 @@ export const SERVICES: Service[] = [
       "Insurance-claim-ready storm, wind, hail, and fire damage inspection and full exterior restoration.",
     image: IMAGES.stormDamage,
     intro:
-      "When a storm hits, you need a contractor who can document the damage, work with your insurance, and restore your exterior fast. We provide thorough inspections, clear reports, and complete storm restoration — start to finish.",
+      "When a storm hits, you need a contractor who can document the damage, work with your insurance, and restore your exterior fast. We provide thorough inspections, clear reports, and complete storm restoration, start to finish.",
     bullets: [
       "Free storm, wind & hail inspections",
       "Insurance claim documentation & management",
@@ -207,7 +207,7 @@ export const SERVICES: Service[] = [
     ],
     body: [
       "Storm damage isn't always obvious from the ground. We perform a detailed inspection, photograph and document every issue, and provide a clear report you and your insurer can act on.",
-      "We're not afraid to fight for a fair claim — our customers regularly tell us we got their roof approved when other companies said it couldn't be done. From emergency tarping to full restoration, we manage the project end to end.",
+      "We're not afraid to fight for a fair claim. Our customers regularly tell us we got their roof approved when other companies said it couldn't be done. From emergency tarping to full restoration, we manage the project end to end.",
     ],
   },
 ];
@@ -228,7 +228,7 @@ export const CITIES: City[] = [
     name: "Fairlawn",
     county: "Summit County",
     intro:
-      "Fairlawn is home base for Choice One Restoration — our office is right here on Court Drive. We're proud to take care of our neighbors with expert roofing, siding, gutter, and window work, and we're never more than a few minutes away.",
+      "Fairlawn is home base for Choice One Restoration. Our office is right here on Court Drive. We're proud to take care of our neighbors with expert roofing, siding, gutter, and window work, and we're never more than a few minutes away.",
     nearby: ["Akron", "Copley", "Bath", "Montrose"],
   },
   {
@@ -236,7 +236,7 @@ export const CITIES: City[] = [
     name: "Akron",
     county: "Summit County",
     intro:
-      "From the historic homes in Highland Square to the newer builds out west, we install and repair roofing, siding, gutters, and windows all over Akron — and we know exactly what Ohio weather does to a home here.",
+      "From the historic homes in Highland Square to the newer builds out west, we install and repair roofing, siding, gutters, and windows all over Akron, and we know exactly what Ohio weather does to a home here.",
     nearby: ["Fairlawn", "Barberton", "Cuyahoga Falls", "Copley"],
   },
   {
@@ -244,7 +244,7 @@ export const CITIES: City[] = [
     name: "Barberton",
     county: "Summit County",
     intro:
-      "We're proud to take care of our Magic City neighbors with roof replacements, siding, gutters, windows, and full storm damage restoration — quality work from a team that treats your home like our own.",
+      "We're proud to take care of our Magic City neighbors with roof replacements, siding, gutters, windows, and full storm damage restoration. Quality work from a team that treats your home like our own.",
     nearby: ["Norton", "Akron", "Wadsworth", "Clinton"],
   },
   {
@@ -268,7 +268,7 @@ export const CITIES: City[] = [
     name: "Stow",
     county: "Summit County",
     intro:
-      "Stow homeowners trust us for roofing, siding, and window projects that look great and hold up for the long haul — and we'll handle the insurance company for you if there's storm damage.",
+      "Stow homeowners trust us for roofing, siding, and window projects that look great and hold up for the long haul, and we'll handle the insurance company for you if there's storm damage.",
     nearby: ["Cuyahoga Falls", "Hudson", "Munroe Falls", "Tallmadge"],
   },
   {
@@ -300,7 +300,7 @@ export const CITIES: City[] = [
     name: "Wadsworth",
     county: "Medina County",
     intro:
-      "We're a familiar face in Wadsworth, handling roofing, siding, gutters, and windows for homeowners across town — quality work from a local, family-owned team you can count on.",
+      "We're a familiar face in Wadsworth, handling roofing, siding, gutters, and windows for homeowners across town. Quality work from a local, family-owned team you can count on.",
     nearby: ["Barberton", "Rittman", "Medina", "Norton"],
   },
   {
@@ -316,7 +316,7 @@ export const CITIES: City[] = [
     name: "Brunswick",
     county: "Medina County",
     intro:
-      "Brunswick homeowners count on us for roof replacements, new siding, energy-efficient windows, and seamless gutters — installed right the first time and backed by our written workmanship warranty.",
+      "Brunswick homeowners count on us for roof replacements, new siding, energy-efficient windows, and seamless gutters, installed right the first time and backed by our written workmanship warranty.",
     nearby: ["Medina", "Strongsville", "Hinckley", "Valley City"],
   },
   {
@@ -324,7 +324,7 @@ export const CITIES: City[] = [
     name: "Seville",
     county: "Medina County",
     intro:
-      "We bring expert roofing, siding, and gutter work to Seville and the surrounding Medina County communities — friendly service, fair pricing, and craftsmanship you can trust.",
+      "We bring expert roofing, siding, and gutter work to Seville and the surrounding Medina County communities. Friendly service, fair pricing, and craftsmanship you can trust.",
     nearby: ["Medina", "Lodi", "Wadsworth", "Rittman"],
   },
   {
@@ -332,7 +332,7 @@ export const CITIES: City[] = [
     name: "Lodi",
     county: "Medina County",
     intro:
-      "Lodi homeowners trust us for honest, high-quality roofing, siding, and replacement windows — close-to-home service backed by our workmanship guarantee.",
+      "Lodi homeowners trust us for honest, high-quality roofing, siding, and replacement windows. Close-to-home service backed by our workmanship guarantee.",
     nearby: ["Seville", "Medina", "Creston", "Burbank"],
   },
   {
@@ -348,7 +348,7 @@ export const CITIES: City[] = [
     name: "Doylestown",
     county: "Wayne County",
     intro:
-      "We're glad to bring dependable roofing, siding, gutter, and window work to Doylestown and the surrounding Wayne County area — quality materials installed the right way.",
+      "We're glad to bring dependable roofing, siding, gutter, and window work to Doylestown and the surrounding Wayne County area. Quality materials installed the right way.",
     nearby: ["Rittman", "Barberton", "Sterling", "Marshallville"],
   },
   {
@@ -356,7 +356,7 @@ export const CITIES: City[] = [
     name: "Sterling",
     county: "Wayne County",
     intro:
-      "Sterling homeowners count on us for roofing, siding, and exterior work that holds up to rural Ohio weather — friendly, straightforward, and built to last.",
+      "Sterling homeowners count on us for roofing, siding, and exterior work that holds up to rural Ohio weather. Friendly, straightforward, and built to last.",
     nearby: ["Rittman", "Creston", "Doylestown", "Smithville"],
   },
   {
@@ -364,7 +364,7 @@ export const CITIES: City[] = [
     name: "Creston",
     county: "Wayne County",
     intro:
-      "We help Creston homeowners with roof replacements, new siding, seamless gutters, and energy-efficient windows — expert craftsmanship close to home.",
+      "We help Creston homeowners with roof replacements, new siding, seamless gutters, and energy-efficient windows. Expert craftsmanship close to home.",
     nearby: ["Sterling", "Burbank", "Lodi", "Smithville"],
   },
   {
@@ -388,7 +388,7 @@ export const CITIES: City[] = [
     name: "Wooster",
     county: "Wayne County",
     intro:
-      "Wooster homeowners trust us for premium roofing, siding, gutters, and windows — clean installs, fair pricing, and Amish craftsmanship that stands the test of time.",
+      "Wooster homeowners trust us for premium roofing, siding, gutters, and windows. Clean installs, fair pricing, and Amish craftsmanship that stands the test of time.",
     nearby: ["Orrville", "Smithville", "Dalton", "Creston"],
   },
   {
@@ -396,7 +396,7 @@ export const CITIES: City[] = [
     name: "Orrville",
     county: "Wayne County",
     intro:
-      "We help Orrville homeowners protect and refresh their homes with expert roofing, siding, gutter, and window work — and we'll handle your insurance claim from start to finish.",
+      "We help Orrville homeowners protect and refresh their homes with expert roofing, siding, gutter, and window work, and we'll handle your insurance claim from start to finish.",
     nearby: ["Wooster", "Dalton", "Marshallville", "Smithville"],
   },
   {
@@ -420,7 +420,7 @@ export const CITIES: City[] = [
     name: "Marshallville",
     county: "Wayne County",
     intro:
-      "We're proud to serve Marshallville with dependable roofing, siding, gutter, and window work — quality materials, clean job sites, and craftsmanship we stand behind.",
+      "We're proud to serve Marshallville with dependable roofing, siding, gutter, and window work. Quality materials, clean job sites, and craftsmanship we stand behind.",
     nearby: ["Orrville", "Doylestown", "Dalton", "Rittman"],
   },
 ];
@@ -466,13 +466,13 @@ export type Testimonial = { quote: string; name: string; service: string };
 export const TESTIMONIALS: Testimonial[] = [
   {
     quote:
-      "Another excellent job by Choice One Restoration! They replaced our roof a few years ago and we were so happy we contacted them again for siding damage from a fallen tree. They took care of everything — from dealing with the insurance company to helping us choose siding type and color. The crew worked quickly and meticulously and we're thrilled with the results!",
+      "Another excellent job by Choice One Restoration! They replaced our roof a few years ago and we were so happy we contacted them again for siding damage from a fallen tree. They took care of everything, from dealing with the insurance company to helping us choose siding type and color. The crew worked quickly and meticulously and we're thrilled with the results!",
     name: "Jennifer Kulp",
     service: "Roofing & Siding",
   },
   {
     quote:
-      "When other companies told us there was no way the insurance company would pay for our roof, Choice One wasn't afraid to try — and they got it approved. Saved us thousands! Bill guided us through the whole process with ease. The crew did an amazing job, were careful not to damage anything, and cleaned up after. I'd recommend them to anyone looking for a new roof!",
+      "When other companies told us there was no way the insurance company would pay for our roof, Choice One wasn't afraid to try, and they got it approved. Saved us thousands! Bill guided us through the whole process with ease. The crew did an amazing job, were careful not to damage anything, and cleaned up after. I'd recommend them to anyone looking for a new roof!",
     name: "Mark Roder",
     service: "Roofing & Insurance Claim",
   },
@@ -502,7 +502,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     quote:
-      "Reasonable price and Bill & Fred were great to work with! They explained all the steps along the way and were extremely helpful with everything regarding the insurance. Give them a call — you won't be sorry!",
+      "Reasonable price and Bill & Fred were great to work with! They explained all the steps along the way and were extremely helpful with everything regarding the insurance. Give them a call, you won't be sorry!",
     name: "Tracey Mazany",
     service: "Roofing & Insurance Claim",
   },

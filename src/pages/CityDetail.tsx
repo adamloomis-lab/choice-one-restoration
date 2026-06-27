@@ -32,12 +32,12 @@ export default function CityDetail() {
             <p className="text-lg text-[var(--color-ink)] leading-relaxed font-medium">
               Looking for a roofing, siding, gutter, or window contractor in {city.name}? Choice One
               Restoration is a local, family-owned company with expert Amish installers and 15 years
-              of craftsmanship — and we'll handle your insurance claim from start to finish.
+              of craftsmanship, and we'll handle your insurance claim from start to finish.
             </p>
             <p className="mt-5 text-[var(--color-muted-foreground)] leading-relaxed">
               Whether you need a full roof replacement after a storm, fresh siding to transform your
               home, seamless gutters, or energy-efficient windows, we treat every {city.name} home
-              like our own — clean job sites, honest pricing, and a written workmanship warranty on
+              like our own: clean job sites, honest pricing, and a written workmanship warranty on
               every project.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">

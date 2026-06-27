@@ -14,7 +14,7 @@ export default function Privacy() {
       <h2>Information We Collect</h2>
       <p>
         We collect information you voluntarily provide through our contact and quote-request
-        forms — such as your name, phone number, email address, property address, and details
+        forms, such as your name, phone number, email address, property address, and details
         about your project. We may also collect basic, non-identifying technical data (such as
         browser type and pages visited) to help us improve our website.
       </p>

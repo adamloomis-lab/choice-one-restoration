@@ -184,7 +184,7 @@ export function getPageMeta(rawPath: string): PageMeta {
     if (city) {
       return {
         title: `Roofing & Siding in ${city.name}, OH | Choice One`,
-        description: `Choice One Restoration provides expert roofing, siding, gutters & window installation in ${city.name}, ${city.county}. Free inspections — call ${BUSINESS.phone}.`,
+        description: `Choice One Restoration provides expert roofing, siding, gutters & window installation in ${city.name}, ${city.county}. Free inspections. Call ${BUSINESS.phone}.`,
         canonical: pageUrl(path),
         ogImage: abs(IMAGES.roofing),
         jsonLd: [
@@ -207,7 +207,7 @@ export function getPageMeta(rawPath: string): PageMeta {
             },
             {
               q: `How do I get a free inspection in ${city.name}?`,
-              a: `Call ${BUSINESS.phone} or request a free inspection through our contact page. We'll inspect your home, document the scope, and provide an honest, no-pressure estimate — and handle your insurance claim if there's storm damage.`,
+              a: `Call ${BUSINESS.phone} or request a free inspection through our contact page. We'll inspect your home, document the scope, and provide an honest, no-pressure estimate, and handle your insurance claim if there's storm damage.`,
             },
           ]),
         ],
@@ -233,7 +233,7 @@ export function getPageMeta(rawPath: string): PageMeta {
     case "/":
       return {
         title: `${BUSINESS.name} | Roofing, Siding, Gutters & Windows in Northeast Ohio`,
-        description: `${BUSINESS.blurb} Free inspections — call ${BUSINESS.phone}.`.slice(0, 300),
+        description: `${BUSINESS.blurb} Free inspections. Call ${BUSINESS.phone}.`.slice(0, 300),
         canonical: pageUrl("/"),
         ogImage: DEFAULT_OG,
         jsonLd: [
@@ -244,7 +244,7 @@ export function getPageMeta(rawPath: string): PageMeta {
     case "/services":
       return {
         title: `Roofing, Siding, Gutters & Windows | ${BUSINESS.name}`,
-        description: `Roofing, siding, gutters, windows, and storm damage restoration across Northeast Ohio — installed by expert Amish crews. Free inspections.`,
+        description: `Roofing, siding, gutters, windows, and storm damage restoration across Northeast Ohio, installed by expert Amish crews. Free inspections.`,
         canonical: pageUrl("/services"),
         ogImage: DEFAULT_OG,
         jsonLd: [
@@ -258,7 +258,7 @@ export function getPageMeta(rawPath: string): PageMeta {
     case "/team":
       return {
         title: `Our Team | Meet the Owners of ${BUSINESS.name}`,
-        description: `Meet the team behind ${BUSINESS.name} — a local, family-owned roofing and exterior company serving Northeast Ohio for 15 years.`,
+        description: `Meet the team behind ${BUSINESS.name}, a local, family-owned roofing and exterior company serving Northeast Ohio for 15 years.`,
         canonical: pageUrl("/team"),
         ogImage: DEFAULT_OG,
         jsonLd: [
@@ -272,7 +272,7 @@ export function getPageMeta(rawPath: string): PageMeta {
     case "/insurance-claims":
       return {
         title: `Storm Damage Insurance Claims Help | ${BUSINESS.name}`,
-        description: `${BUSINESS.name} manages your storm and hail damage insurance claim end to end — inspection, documentation, and full restoration across Northeast Ohio.`,
+        description: `${BUSINESS.name} manages your storm and hail damage insurance claim end to end: inspection, documentation, and full restoration across Northeast Ohio.`,
         canonical: pageUrl("/insurance-claims"),
         ogImage: DEFAULT_OG,
         jsonLd: [
@@ -292,7 +292,7 @@ export function getPageMeta(rawPath: string): PageMeta {
             },
             {
               q: "How do I know if I have storm or hail damage?",
-              a: "Damage isn't always visible from the ground. We offer free, no-obligation inspections — we'll get up there, photograph everything, and give you a clear report.",
+              a: "Damage isn't always visible from the ground. We offer free, no-obligation inspections. We'll get up there, photograph everything, and give you a clear report.",
             },
           ]),
         ],

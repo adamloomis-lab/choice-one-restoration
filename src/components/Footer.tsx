@@ -24,13 +24,13 @@ export default function Footer() {
             <Link href="/" className="inline-block bg-white p-3 rounded-md">
               <img
                 src={IMAGES.logo}
-                alt={`${BUSINESS.name} — Roofing, Siding, Gutters & Windows`}
+                alt={`${BUSINESS.name}, Roofing, Siding, Gutters & Windows`}
                 className="h-20 w-auto object-contain"
               />
             </Link>
             <p className="mt-4 text-sm text-white/60 leading-relaxed">
               Local, family-owned roofing & exterior restoration with expert Amish
-              installers — serving Northeast Ohio for 15 years.
+              installers, serving Northeast Ohio for 15 years.
             </p>
             {SOCIALS.length > 0 && (
               <div className="mt-5 flex items-center gap-3">
@@ -87,7 +87,7 @@ export default function Footer() {
               Service Area
             </h4>
             <p className="text-sm text-white/70 leading-relaxed">
-              Proudly serving <span className="font-semibold text-white">all of Northeast Ohio</span> —
+              Proudly serving <span className="font-semibold text-white">all of Northeast Ohio</span>:
               Summit, Medina, Wayne &amp; surrounding counties.
             </p>
           </div>

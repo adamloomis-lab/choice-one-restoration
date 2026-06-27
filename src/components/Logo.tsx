@@ -10,7 +10,7 @@ export default function Logo({ className = "h-14 w-auto" }: { className?: string
     return (
       <img
         src={IMAGES.logo}
-        alt={`${BUSINESS.name} — Roofing, Siding, Gutters & Windows`}
+        alt={`${BUSINESS.name}, Roofing, Siding, Gutters & Windows`}
         className={`${className} object-contain`}
         onError={() => setFailed(true)}
       />

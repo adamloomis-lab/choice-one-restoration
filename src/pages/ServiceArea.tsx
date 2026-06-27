@@ -58,7 +58,8 @@ export default function ServiceArea() {
           ))}
 
           <p className="mt-6 text-[var(--color-muted-foreground)] leading-relaxed">
-            Don't see your town? We serve many more communities across Northeast Ohio —{" "}
+            Don't see your town? We serve many more communities across Northeast Ohio.{" "}
+            Just{" "}
             <a href={`tel:${BUSINESS.phoneE164}`} className="font-semibold text-[var(--color-brand)] hover:underline">
               give us a call
             </a>{" "}

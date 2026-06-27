@@ -16,7 +16,7 @@ export default function Contact() {
         eyebrow="Free Inspections"
         title="Let's Take Care of Your"
         highlight="Home."
-        subtitle="Tell us a little about your project and we'll get right back to you with a free, no-pressure inspection and estimate. Honest answers and a fair price — every time."
+        subtitle="Tell us a little about your project and we'll get right back to you with a free, no-pressure inspection and estimate. Honest answers and a fair price, every time."
         image={IMAGES.homeLuxury}
       />
 
@@ -59,7 +59,7 @@ export default function Contact() {
                 </li>
                 <li className="flex items-start gap-2">
                   <Clock size={16} className="mt-0.5 text-[var(--color-brand)]" />
-                  <span>Mon–Fri 8AM–5PM · Sat by appointment</span>
+                  <span>Mon-Fri 8AM-5PM · Sat by appointment</span>
                 </li>
               </ul>
             </div>
@@ -77,7 +77,7 @@ export default function Contact() {
                 {t.quote}
               </p>
               <p className="mt-3 font-mono text-[0.7rem] uppercase tracking-[0.15em] text-[var(--color-muted-foreground)]">
-                — {t.name}
+                {t.name}
               </p>
             </div>
           </aside>
@@ -93,7 +93,7 @@ export default function Contact() {
           </h2>
           <p className="mt-4 max-w-2xl text-[var(--color-muted-foreground)] leading-relaxed">
             Based in {BUSINESS.address.city}, we serve homeowners across Summit, Medina, Wayne,
-            and surrounding counties — including {SERVICE_AREA_CITIES.slice(0, 8).join(", ")},
+            and surrounding counties, including {SERVICE_AREA_CITIES.slice(0, 8).join(", ")},
             and many more nearby communities.
           </p>
           <div className="mt-8 border border-[var(--color-border)] overflow-hidden">

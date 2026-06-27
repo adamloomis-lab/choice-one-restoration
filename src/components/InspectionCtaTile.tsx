@@ -19,7 +19,7 @@ export default function InspectionCtaTile() {
           Not Sure Where to Start?
         </h3>
         <p className="mt-3 text-white/85 leading-relaxed">
-          Get a free, no-pressure inspection and we'll walk you through your options — and handle
+          Get a free, no-pressure inspection and we'll walk you through your options, and handle
           the insurance if there's storm damage.
         </p>
         <span className="mt-6 inline-flex items-center gap-2 bg-white px-5 py-3 font-display text-sm font-extrabold uppercase tracking-wide text-[var(--color-brand)] transition-transform group-hover:translate-x-1">

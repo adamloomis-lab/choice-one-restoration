@@ -12,7 +12,7 @@ export default function Services() {
         eyebrow="What We Do"
         title="Exterior Work Built"
         highlight="to Last."
-        subtitle="Roofing, siding, gutters, and windows — all handled by one local team with expert Amish installers, from the first inspection to the final cleanup."
+        subtitle="Roofing, siding, gutters, and windows, all handled by one local team with expert Amish installers, from the first inspection to the final cleanup."
         image={IMAGES.commercialRoof}
       />
 

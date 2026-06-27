@@ -19,7 +19,7 @@ const STEPS = [
   {
     icon: Search,
     title: "Free Damage Inspection",
-    body: "We climb up and thoroughly inspect your roof, siding, and gutters for storm, wind, and hail damage — then document everything with photos.",
+    body: "We climb up and thoroughly inspect your roof, siding, and gutters for storm, wind, and hail damage, then document everything with photos.",
   },
   {
     icon: FileText,
@@ -29,12 +29,12 @@ const STEPS = [
   {
     icon: Handshake,
     title: "We Meet Your Adjuster",
-    body: "We work directly with your insurance adjuster to make sure the claim reflects every bit of the damage — nothing gets missed or shorted.",
+    body: "We work directly with your insurance adjuster to make sure the claim reflects every bit of the damage. Nothing gets missed or shorted.",
   },
   {
     icon: Wrench,
     title: "We Restore Your Home",
-    body: "Once your claim is approved, our expert Amish crews restore your roof, siding, and gutters — and we handle the paperwork through to completion.",
+    body: "Once your claim is approved, our expert Amish crews restore your roof, siding, and gutters, and we handle the paperwork through to completion.",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function InsuranceClaims() {
         eyebrow="Storm & Insurance Claims"
         title="We Handle the Insurance Company,"
         highlight="So You Don't Have To."
-        subtitle="Storm or hail damage is stressful enough. We manage the entire insurance claim process — from inspection to documentation to restoration — and we're not afraid to fight for a fair claim."
+        subtitle="Storm or hail damage is stressful enough. We manage the entire insurance claim process, from inspection to documentation to restoration, and we're not afraid to fight for a fair claim."
         image={IMAGES.insurance}
       />
 
@@ -55,7 +55,7 @@ export default function InsuranceClaims() {
           <div className="max-w-3xl">
             <p className="text-lg text-[var(--color-ink)] leading-relaxed font-medium">
               When other companies told our customers there was no way the insurance company
-              would pay for their roof, we weren't afraid to try — and we got them approved.
+              would pay for their roof, we weren't afraid to try, and we got them approved.
             </p>
             <p className="mt-5 text-[var(--color-muted-foreground)] leading-relaxed">
               Insurance claims are one of the most stressful parts of dealing with storm damage.
@@ -120,7 +120,7 @@ export default function InsuranceClaims() {
           </div>
           <p className="mt-6 text-[var(--color-muted-foreground)] leading-relaxed">
             Don't see your insurance company? These are just a few of the many carriers we work
-            with — <a href={`tel:${BUSINESS.phoneE164}`} className="font-semibold text-[var(--color-brand)] hover:underline">give us a call</a> and we'll help with your claim.
+            with. <a href={`tel:${BUSINESS.phoneE164}`} className="font-semibold text-[var(--color-brand)] hover:underline">Give us a call</a> and we'll help with your claim.
           </p>
         </div>
       </section>
@@ -134,7 +134,7 @@ export default function InsuranceClaims() {
             </h2>
             <p className="mt-3 text-[var(--color-muted-foreground)] leading-relaxed max-w-2xl">
               Damage isn't always visible from the ground. Don't wait until a small leak becomes a
-              big problem — schedule your free, no-obligation inspection today.
+              big problem. Schedule your free, no-obligation inspection today.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 shrink-0">
