@@ -10,9 +10,6 @@ export interface MobileMenuProps {
 }
 
 const a = BUSINESS.address;
-const directions =
-  "https://www.google.com/maps/dir/?api=1&destination=" +
-  encodeURIComponent(`${BUSINESS.name}, ${a.street}, ${a.city}, ${a.state} ${a.zip}`);
 
 // Full-screen, high-trust mobile navigation. Backdrop-blurred dark navy panel
 // with a royal-blue glow, staggered link entrance, and prominent contact CTAs.
@@ -123,10 +120,10 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
           </div>
 
           <div className="mt-auto space-y-3 pt-10 text-sm text-white/70">
-            <a href={directions} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-white">
+            <div className="flex items-center gap-3">
               <MapPin size={18} className="shrink-0 text-[var(--color-brand)]" />
               {a.street}, {a.city}, {a.state} {a.zip}
-            </a>
+            </div>
             <p className="flex items-center gap-3">
               <Clock size={18} className="shrink-0 text-[var(--color-brand)]" /> Mon-Fri 8AM-5PM · Sat by appointment
             </p>

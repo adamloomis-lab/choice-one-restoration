@@ -1,15 +1,9 @@
-import { Phone, MapPin, FileText } from "lucide-react";
+import { Phone, FileText } from "lucide-react";
 import { Link } from "wouter";
 import { BUSINESS } from "../lib/constants";
 
-const a = BUSINESS.address;
-const directions =
-  "https://www.google.com/maps/dir/?api=1&destination=" +
-  encodeURIComponent(`${BUSINESS.name}, ${a.street}, ${a.city}, ${a.state} ${a.zip}`);
-
 // High-end floating action bar: an elevated, blurred dark capsule that stands
-// off the edge. Glassy Call + Directions buttons and a glowing royal-blue Quote
-// button.
+// off the edge. A glassy Call button and a glowing royal-blue Quote button.
 export default function MobileActionBar() {
   return (
     <nav
@@ -23,14 +17,6 @@ export default function MobileActionBar() {
           className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-white/10 py-3.5 font-display text-xs font-semibold uppercase tracking-[0.12em] text-white transition-all active:scale-95"
         >
           <Phone size={18} className="text-[var(--color-brand)]" /> Call
-        </a>
-        <a
-          href={directions}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-white/10 py-3.5 font-display text-xs font-semibold uppercase tracking-[0.12em] text-white transition-all active:scale-95"
-        >
-          <MapPin size={18} className="text-[var(--color-brand)]" /> Directions
         </a>
         <Link
           href="/contact"
