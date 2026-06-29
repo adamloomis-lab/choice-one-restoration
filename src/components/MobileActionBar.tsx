@@ -16,7 +16,7 @@ export default function MobileActionBar() {
           href={`tel:${BUSINESS.phoneE164}`}
           className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-white/10 py-3.5 font-display text-xs font-semibold uppercase tracking-[0.12em] text-white transition-all active:scale-95"
         >
-          <Phone size={18} className="text-[var(--color-brand)]" /> Call
+          <Phone size={18} className="text-[var(--color-brand-bright)]" /> Call
         </a>
         <Link
           href="/contact"
