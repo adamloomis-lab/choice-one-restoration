@@ -8,7 +8,8 @@ import CountUp from "@/components/CountUp";
 import ServiceCard from "@/components/ServiceCard";
 import InspectionCtaTile from "@/components/InspectionCtaTile";
 import ProcessSteps from "@/components/ProcessSteps";
-import { BUSINESS, SERVICES, IMAGES } from "@/lib/constants";
+import HeroSlideshow from "@/components/HeroSlideshow";
+import { BUSINESS, SERVICES, HERO_SLIDES } from "@/lib/constants";
 
 const TRUST = [
   { icon: ShieldCheck, label: "Licensed & Insured" },
@@ -22,12 +23,7 @@ export default function Home() {
     <>
       {/* Hero */}
       <section id="hero" className="on-dark relative overflow-hidden bg-[var(--color-navy)] text-white">
-        <img
-          src={IMAGES.heroHome}
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 h-full w-full object-cover"
-        />
+        <HeroSlideshow images={[...HERO_SLIDES]} />
         <div
           className="absolute inset-0"
           style={{

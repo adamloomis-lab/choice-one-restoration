@@ -77,6 +77,15 @@ export const IMAGES = {
   teamCrew: "/images/team-crew.jpg", // two team members on a roof
 } as const;
 
+// Cross-fading home-hero slideshow — real aerial roof / project photos.
+export const HERO_SLIDES = [
+  "/images/hero-1.jpg",
+  "/images/hero-2.jpg",
+  "/images/hero-3.jpg",
+  "/images/hero-4.jpg",
+  "/images/hero-5.jpg",
+] as const;
+
 // What we tell homeowners about how a project runs, start to finish.
 export const PROCESS = [
   {
