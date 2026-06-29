@@ -2,7 +2,6 @@ import type { ReactNode } from "react";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 import MobileActionBar from "./MobileActionBar";
-import TextUsButton from "./TextUsButton";
 import DesktopEstimateButton from "./DesktopEstimateButton";
 import CookieConsent from "./CookieConsent";
 
@@ -15,7 +14,6 @@ export default function Layout({ children }: { children: ReactNode }) {
       <Footer />
       <div className="h-16 lg:hidden" aria-hidden="true" />
       <MobileActionBar />
-      <TextUsButton />
       <DesktopEstimateButton />
       <CookieConsent />
     </div>
