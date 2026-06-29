@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function NotFound() {
   return (
-    <section className="bg-[var(--color-navy)] text-white">
+    <section className="on-dark bg-[var(--color-navy)] text-white">
       <div className="container-x py-32 text-center">
         <p className="eyebrow mb-4">Error 404</p>
         <h1 className="display text-6xl sm:text-7xl text-white">Page Not Found</h1>

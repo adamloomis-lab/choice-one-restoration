@@ -10,7 +10,7 @@ type PageHeroProps = {
 // navy overlay so the white headline stays legible.
 export default function PageHero({ eyebrow, title, highlight, subtitle, image }: PageHeroProps) {
   return (
-    <section className="relative overflow-hidden bg-[var(--color-navy)] text-white">
+    <section className="on-dark relative overflow-hidden bg-[var(--color-navy)] text-white">
       {image && (
         <>
           <img
@@ -23,7 +23,7 @@ export default function PageHero({ eyebrow, title, highlight, subtitle, image }:
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(90deg, rgba(11,16,32,0.95) 0%, rgba(11,16,32,0.85) 55%, rgba(6,9,18,0.72) 100%)",
+                "linear-gradient(90deg, rgba(11,16,32,0.82) 0%, rgba(11,16,32,0.68) 55%, rgba(6,9,18,0.55) 100%)",
             }}
           />
         </>
@@ -32,7 +32,7 @@ export default function PageHero({ eyebrow, title, highlight, subtitle, image }:
         {eyebrow && <p className="eyebrow mb-4">{eyebrow}</p>}
         <h1 className="display text-4xl sm:text-5xl lg:text-6xl text-white max-w-4xl">
           {title}{" "}
-          {highlight && <span className="text-[var(--color-brand)]">{highlight}</span>}
+          {highlight && <span className="text-[var(--color-brand-bright)]">{highlight}</span>}
         </h1>
         {subtitle && (
           <p className="mt-6 max-w-2xl text-lg text-white/75 leading-relaxed">{subtitle}</p>

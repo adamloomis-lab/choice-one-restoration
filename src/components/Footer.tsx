@@ -52,7 +52,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="font-mono text-xs font-bold uppercase tracking-[0.18em] text-[var(--color-brand)] mb-4">
+            <h4 className="font-mono text-xs font-bold uppercase tracking-[0.18em] text-[var(--color-brand-bright)] mb-4">
               Our Services
             </h4>
             <ul className="space-y-2">
@@ -71,7 +71,7 @@ export default function Footer() {
 
           {/* Company + service area */}
           <div>
-            <h4 className="font-mono text-xs font-bold uppercase tracking-[0.18em] text-[var(--color-brand)] mb-4">
+            <h4 className="font-mono text-xs font-bold uppercase tracking-[0.18em] text-[var(--color-brand-bright)] mb-4">
               Company
             </h4>
             <ul className="space-y-2">
@@ -83,7 +83,7 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-            <h4 className="font-mono text-xs font-bold uppercase tracking-[0.18em] text-[var(--color-brand)] mt-6 mb-3">
+            <h4 className="font-mono text-xs font-bold uppercase tracking-[0.18em] text-[var(--color-brand-bright)] mt-6 mb-3">
               Service Area
             </h4>
             <p className="text-sm text-white/70 leading-relaxed">
@@ -94,24 +94,24 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-mono text-xs font-bold uppercase tracking-[0.18em] text-[var(--color-brand)] mb-4">
+            <h4 className="font-mono text-xs font-bold uppercase tracking-[0.18em] text-[var(--color-brand-bright)] mb-4">
               Get In Touch
             </h4>
             <ul className="space-y-3 text-sm text-white/70">
               <li className="flex items-start gap-2">
-                <Phone size={16} className="mt-0.5 text-[var(--color-brand)]" />
+                <Phone size={16} className="mt-0.5 text-[var(--color-brand-bright)]" />
                 <a href={`tel:${BUSINESS.phoneE164}`} className="hover:text-white">
                   {BUSINESS.phone}
                 </a>
               </li>
               <li className="flex items-start gap-2">
-                <Mail size={16} className="mt-0.5 text-[var(--color-brand)]" />
+                <Mail size={16} className="mt-0.5 text-[var(--color-brand-bright)]" />
                 <a href={`mailto:${BUSINESS.email}`} className="hover:text-white break-all">
                   {BUSINESS.email}
                 </a>
               </li>
               <li className="flex items-start gap-2">
-                <MapPin size={16} className="mt-0.5 text-[var(--color-brand)]" />
+                <MapPin size={16} className="mt-0.5 text-[var(--color-brand-bright)]" />
                 <span>
                   {BUSINESS.address.street}, {BUSINESS.address.city}, {BUSINESS.address.state}{" "}
                   {BUSINESS.address.zip}
@@ -144,7 +144,7 @@ export default function Footer() {
                   href="https://adamloomismarketing.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-semibold hover:text-[var(--color-brand)] transition-colors"
+                  className="font-semibold hover:text-[var(--color-brand-bright)] transition-colors"
                 >
                   Adam Loomis Marketing
                 </a>

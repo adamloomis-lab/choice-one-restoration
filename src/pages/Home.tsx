@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section id="hero" className="relative overflow-hidden bg-[var(--color-navy)] text-white">
+      <section id="hero" className="on-dark relative overflow-hidden bg-[var(--color-navy)] text-white">
         <img
           src={IMAGES.heroHome}
           alt=""
@@ -32,14 +32,14 @@ export default function Home() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(90deg, rgba(11,16,32,0.95) 0%, rgba(11,16,32,0.86) 50%, rgba(6,9,18,0.74) 100%)",
+              "linear-gradient(90deg, rgba(11,16,32,0.82) 0%, rgba(11,16,32,0.70) 50%, rgba(6,9,18,0.55) 100%)",
           }}
         />
         <div className="container-x relative py-20 lg:py-28">
           <p className="eyebrow mb-4">Roofing · Siding · Gutters · Windows</p>
           <h1 className="display text-4xl sm:text-5xl lg:text-6xl text-white max-w-4xl">
             Quality Roofing Solutions for Your{" "}
-            <span className="text-[var(--color-brand)]">Home & Business.</span>
+            <span className="text-[var(--color-brand-bright)]">Home & Business.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-white/80 leading-relaxed">
             {BUSINESS.blurb}
@@ -171,10 +171,10 @@ export default function Home() {
       <ReviewsSection limit={6} />
 
       {/* Insurance claims band */}
-      <section className="bg-[var(--color-navy)] text-white">
+      <section className="on-dark bg-[var(--color-navy)] text-white">
         <div className="container-x py-16 lg:py-20 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
           <div className="max-w-2xl">
-            <div className="flex items-center gap-2 mb-4 text-[var(--color-brand)]">
+            <div className="flex items-center gap-2 mb-4 text-[var(--color-brand-bright)]">
               <FileCheck2 size={22} />
               <span className="font-mono text-[0.7rem] font-bold uppercase tracking-[0.18em]">
                 Storm & Insurance Claims

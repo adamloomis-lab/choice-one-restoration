@@ -6,9 +6,10 @@
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 
   /* Choice One Restoration — white theme, royal blue + black (from logo) */
-  --color-brand: #1B27CD;        /* Logo royal blue — CTAs, accents, rules */
+  --color-brand: #1B27CD;        /* Logo royal blue — CTAs, accents, rules on light bg */
   --color-brand-dark: #1620a6;
   --color-brand-darker: #111880;
+  --color-brand-bright: #5b73ff; /* Brighter variant for legibility on dark backgrounds */
 
   /* Deep ink-navy — used for footer + dark hero overlays (the "black" accent) */
   --color-navy: #0b1020;
@@ -73,6 +74,9 @@
     text-transform: uppercase;
     color: var(--color-brand);
   }
+  /* On dark hero/section backgrounds, swap the eyebrow to the brighter blue
+     so it stays legible (WCAG AA) against the near-black navy. */
+  .on-dark .eyebrow { color: var(--color-brand-bright); }
 
   .rule-red {
     width: 56px;
