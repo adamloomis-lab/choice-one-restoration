@@ -28,16 +28,16 @@ export default function Home() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(90deg, rgba(11,16,32,0.82) 0%, rgba(11,16,32,0.70) 50%, rgba(6,9,18,0.55) 100%)",
+              "linear-gradient(90deg, rgba(11,16,32,0.60) 0%, rgba(11,16,32,0.38) 50%, rgba(11,16,32,0.18) 100%)",
           }}
         />
-        <div className="container-x relative py-20 lg:py-28">
+        <div className="container-x relative py-20 lg:py-28 [text-shadow:0_2px_14px_rgba(0,0,0,0.55)]">
           <p className="eyebrow mb-4">Roofing · Siding · Gutters · Windows</p>
           <h1 className="display text-4xl sm:text-5xl lg:text-6xl text-white max-w-4xl">
             Quality Roofing Solutions for Your{" "}
             <span className="text-[var(--color-brand-bright)]">Home & Business.</span>
           </h1>
-          <p className="mt-6 max-w-2xl text-lg text-white/80 leading-relaxed">
+          <p className="mt-6 max-w-2xl text-lg text-white/85 leading-relaxed">
             {BUSINESS.blurb}
           </p>
 
