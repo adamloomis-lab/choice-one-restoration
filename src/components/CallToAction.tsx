@@ -18,7 +18,12 @@ export default function CallToAction({
       <div className="container-x py-16 lg:py-20 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
         <div className="max-w-2xl">
           <h2 className="display text-3xl sm:text-4xl lg:text-5xl text-white">
-            {title} {highlight && <span className="text-[var(--color-ink)]">{highlight}</span>}
+            {title}{" "}
+            {highlight && (
+              <span className="text-white underline underline-offset-[10px] decoration-white/45 decoration-[5px]">
+                {highlight}
+              </span>
+            )}
           </h2>
           <p className="mt-4 text-white/85 text-lg leading-relaxed">{subtitle}</p>
         </div>

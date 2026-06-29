@@ -89,7 +89,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
                 key={l.href}
                 href={l.href}
                 onClick={onClose}
-                className={`group flex items-center justify-between border-b border-white/10 py-4 font-display text-2xl font-extrabold uppercase tracking-tight text-white/90 transition-transform duration-500 motion-reduce:transition-none hover:text-[var(--color-brand)] ${
+                className={`group flex items-center justify-between border-b border-white/10 py-4 font-display text-2xl font-extrabold uppercase tracking-tight text-white/90 transition-transform duration-500 motion-reduce:transition-none hover:text-[var(--color-brand-bright)] ${
                   shown ? "translate-x-0" : "translate-x-6"
                 }`}
                 style={{ transitionDelay: `${120 + i * 70}ms` }}
@@ -97,7 +97,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
                 {l.label}
                 <ArrowRight
                   size={20}
-                  className="text-white/30 transition-all group-hover:translate-x-1 group-hover:text-[var(--color-brand)]"
+                  className="text-white/30 transition-all group-hover:translate-x-1 group-hover:text-[var(--color-brand-bright)]"
                 />
               </Link>
             ))}
@@ -126,18 +126,18 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
 
           <div className="mt-auto space-y-3 pt-10 text-sm text-white/70">
             <div className="flex items-center gap-3">
-              <MapPin size={18} className="shrink-0 text-[var(--color-brand)]" />
+              <MapPin size={18} className="shrink-0 text-[var(--color-brand-bright)]" />
               {a.street}, {a.city}, {a.state} {a.zip}
             </div>
             <p className="flex items-center gap-3">
-              <Clock size={18} className="shrink-0 text-[var(--color-brand)]" /> Mon-Fri 8AM-5PM · Sat by appointment
+              <Clock size={18} className="shrink-0 text-[var(--color-brand-bright)]" /> Mon-Fri 8AM-5PM · Sat by appointment
             </p>
             <div className="flex items-center gap-4 pt-1">
               <a href={BUSINESS.social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Choice One on Facebook" className="flex items-center gap-2 hover:text-white">
-                <Facebook size={18} className="shrink-0 text-[var(--color-brand)]" /> Facebook
+                <Facebook size={18} className="shrink-0 text-[var(--color-brand-bright)]" /> Facebook
               </a>
               <a href={BUSINESS.social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Choice One on Instagram" className="flex items-center gap-2 hover:text-white">
-                <Instagram size={18} className="shrink-0 text-[var(--color-brand)]" /> Instagram
+                <Instagram size={18} className="shrink-0 text-[var(--color-brand-bright)]" /> Instagram
               </a>
             </div>
           </div>
